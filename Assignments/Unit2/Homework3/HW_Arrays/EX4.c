@@ -1,0 +1,38 @@
+
+#include <stdio.h>
+
+int main(void)
+{
+	
+	printf("Enter no of elemnts: ");
+	int n;
+	scanf("%d",&n);
+	int a [n];
+	int i;
+	for(i=0; i<n; i++)
+	{
+	scanf("%d",&a[i]);
+	}
+	
+	printf("Enter the element to be inserted: ");
+	int e;
+	scanf("%d",&e);
+	
+	printf("Enter the location: ");
+	int l;
+	scanf("%d",&l);
+	
+
+	for(i=0; i<n; i++)
+	{
+		if((l-1)==i)
+		{
+			printf("%d ",e);
+		}
+		printf("%d ",a[i]);
+	}
+	
+	
+	
+	return 0;
+}
